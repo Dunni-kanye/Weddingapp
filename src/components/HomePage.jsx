@@ -3,23 +3,33 @@ import { Link } from "react-router-dom"
 import { Menu, Search, User, Home, Calendar, Users, FileText, Lightbulb } from "lucide-react"
 import Weddingcouple from "../assets/Weddingcouple.png" 
 import Checklist from "../assets/Checklist.png"
-
+import Budget from "../assets/Budget.png"
+import Catering from "../assets/Catering.png"
+import Invitation from "../assets/Invitation.png"
+import Dj from "../assets/Dj.png"
+import Fashiondesigner from "../assets/Fashiondesigner.png"
+import Sourvenirs from "../assets/Sourvenirs.png"
+import Photographer from "../assets/Photographer.png"
+import Venue from "../assets/Venue.png"
+import Guestlist from "../assets/Guestlist.png"
+import Drinks from "../assets/Drinks.png"
+import Decorator from "../assets/Decorator.png"
 export default function HomePage() {
   const [daysUntil, setDaysUntil] = useState(120)
 
   const categories = [
-    { name: "Venue", image: "/placeholder.svg", href: "/venue" },
-    { name: "Catering", image: "/placeholder.svg", href: "/catering" },
-    { name: "Photography", image: "/placeholder.svg", href: "/photography" },
+    { name: "Venue", image: Venue, href: "/venue" },
+    { name: "Catering", image: Catering, href: "/catering" },
+    { name: "Photography", image:Photographer, href: "/photography" },
     { name: "Checklist", image: Checklist, href: "/checklist" },
-    { name: "Guest List", image: "/placeholder.svg", href: "/guest-list" },
-    { name: "Invitation", image: "/placeholder.svg", href: "/invitation" },
-    { name: "Budget", image: "/placeholder.svg", href: "/budget" },
-    { name: "Vendors", image: "/placeholder.svg", href: "/vendors" },
-    { name: "Ceremony", image: "/placeholder.svg", href: "/ceremony" },
-    { name: "DJ", image: "/placeholder.svg", href: "/music" },
-    { name: "Gifts", image: "/placeholder.svg", href: "/gifts" },
-    { name: "Fashion Designer", image: "/placeholder.svg", href: "/Fashion" },
+    { name: "Guest List", image: Guestlist, href: "/guest-list" },
+    { name: "Invitation", image: Invitation, href: "/invitation" },
+    { name: "Budget", image: Budget, href: "/budget" },
+    { name: "Decorators", image: Decorator, href: "/Decorators" },
+    { name: "Drinks", image: Drinks, href: "/drinks" },
+    { name: "DJ", image: Dj, href: "/music" },
+    { name: "Sourvenirs", image: Sourvenirs, href: "/Sourvenirs" },
+    { name: "Fashion Designer", image: Fashiondesigner, href: "/Fashion" },
   ]
 
   return (

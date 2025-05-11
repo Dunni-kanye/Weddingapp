@@ -1,8 +1,16 @@
 import { useState } from "react"
+import { useNavigate } from "react-router-dom"
 import { CalendarIcon, HeartIcon } from "lucide-react"
 
 export default function SignUp() {
   const [weddingDate, setWeddingDate] = useState("")
+  const navigate = useNavigate()
+
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    
+    navigate("/home")
+  }
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-b from-white-50 to-white p-4">
@@ -13,7 +21,7 @@ export default function SignUp() {
           <p className="text-sm text-gray-500">Start planning your perfect wedding day</p>
         </div>
 
-        <form className="space-y-4">
+        <form className="space-y-4" onSubmit={handleSubmit}>
           <div className="grid grid-cols-2 gap-4">
             <div>
               <label className="block text-sm font-medium text-gray-700">First name</label>
